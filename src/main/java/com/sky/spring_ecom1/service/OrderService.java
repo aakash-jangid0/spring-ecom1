@@ -39,7 +39,9 @@ public class OrderService {
         }
 
         Order order = new Order();
-        String orderId = "ORD" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+        String orderId = "ORD"
+            + UUID.randomUUID() .toString()
+            .substring(0, 8) .toUpperCase();
         order.setOrderId(orderId);
         order.setCustomerName(request.customerName());
         order.setEmail(request.email());
